@@ -1,0 +1,12 @@
+body {background-image: url("artistic-3840x2160-deer-4k-18394.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: 1920px 1080px}
+    p {
+        text-align:center;
+      }
+      
+      p input {
+        float:center;
+      }

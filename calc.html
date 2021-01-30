@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="calc.css">
+    <title>cgpa calculator</title>
+
+
+  </head>
+  <body>
+
+    <div>
+      <p style="color:white;font-size:200%;font-family:helvetica;text-align:center;">NUMBER OF SUBJECTS:</p>
+      <p><input type="number" id='subjects';></input></p>
+      <p style="text-align:center;"></p>
+    </div>
+
+    <div class="">
+      
+      <button type="button" style="background-color:pink;margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:0%"name="button" onClick='addMarks()'>Input Marks</button>
+      
+      <p></p>
+    </div>
+
+    <div id='texts'>
+      
+    </div>
+    <button type="button" style="background-color:pink;margin-left:auto;margin-right:auto;display:block;margin-top:1%;margin-bottom:0%"name="button" onClick='calculate()'>calculate gpa</button>
+
+    <div id='Final mark' style="color:white;font-size:200%;font-family:helvetica;text-align:center;">
+    
+        <p id='output'"></p>
+      
+    </div>
+    <script src="calc.js" ></script>
+
+  </body>
+</html>
