@@ -1,29 +1,28 @@
-var markInputs=document.getElementById("texts");
+var inpmark=document.getElementById("texts");
 var finalMark=document.getElementById("Final mark");
-var total=document.getElementById("subjects");
+var totalSubs=document.getElementById("Num subjects");
 var numSubs=0;
-var total1=0;
-
-
-function addMarks(){
-  
-  for(var i=0;i<numSubs;i++){
+var total=0;
+// var l_gpa=[];
+// var button=document.getElementById("t");
+// button.style.display="block"
+function createField()
+{
+  for(var i=0;i<numSubs;i++)
+  {
     var input=document.getElementById(i);
-    markInputs.removeChild(input);
+    inpmark.removeChild(input);
   }
-  
-  numSubs;
-  
-  for(var i=0;i<total.value;i++){
+  numSubs=0;
+  for(var i=0;i<totalSubs.value;i++)
+  {
     var input = document.createElement("input");
     input.type = "number";
     input.name="mark";
     input.id=numSubs;
-    markInputs.appendChild(input);
+    inpmark.appendChild(input);
     numSubs+=1;
   }
-
-
 }
 function calculate(){
   
@@ -32,7 +31,7 @@ function calculate(){
   finalMark.removeChild(final);
   
   
-  var total1=0;
+  var totalm=0;
   var gp;
   
   for(var i=0;i<numSubs;i++)
@@ -61,18 +60,18 @@ function calculate(){
         gp='0';
         break;
     }
-    total1+=parseInt(gp);
+    totalm+=parseInt(gp);
     
   }
   
   var gpa;
-  gpa=total1/numSubs;
+  gpa=totalm/numSubs;
   console.log(gpa);
   var final=document.createElement("P");
   final.innerText=(gpa);
   final.id='output';
   finalMark.appendChild(final);
-  total1=0;
+  totalm=0;
 
 
 }
